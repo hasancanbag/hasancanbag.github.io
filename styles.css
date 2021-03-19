@@ -1,0 +1,53 @@
+body{
+
+   background-color: CornflowerBlue;
+   text-align: center;
+
+}
+
+h1{
+    color: #EC6DCD;
+    font-size: 62px;
+    font-family: verdana;
+
+}
+
+h3{
+     color: #F09162;
+     height: 15px;
+
+}
+
+span{
+     color: yellow;
+}
+
+.myDiv {
+  
+  background-color: lightblue;
+  display: inline-block;
+  width: 600px;
+  font-family:courier;
+
+}
+
+.list{
+    text-align: center;
+    display: inline-block;
+ 
+}
+
+li{
+     text-align: left;
+}
+
+p{
+   text-align: left;
+   border: 3px solid #E5E069;
+   display: inline-block;
+   background-color: lightblue;
+   font-family:courier;
+   width: 600px;
+   font-size: 16px;
+
+}
