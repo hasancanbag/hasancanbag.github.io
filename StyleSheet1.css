@@ -1,0 +1,99 @@
+body
+{
+    background-color: powderblue;
+    margin: auto;
+
+}
+
+
+header, footer {
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    height: 200px;
+}
+
+.logo img{
+    margin: 10px;
+    display: block;
+    margin: 0, auto;
+    flex-shrink: 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section{
+    display:flex;
+    background-color: lightgray;
+
+}
+
+.konteyner {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    height: 900px;
+    width: 310px;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.konteynet {
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    flex-direction: column;
+    height: 900px;
+    width: 900px;
+    flex-grow: 1;
+    border: 5px solid black;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.bölüm {
+    height: 40px;
+    width: 310px;
+    border: 2px solid blue;
+    background-color: peachpuff;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.açıklama {
+
+    width: 310px;
+    border: 2px solid blue;
+    background-color: brown;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.buton {
+    height: 40px;
+    width: 100px;
+    background-color: gold;
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.name{
+
+    font-family:'MS UI Gothic';
+    font-size: 24px;
+}
