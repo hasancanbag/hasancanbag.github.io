@@ -1,49 +1,280 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="tr">
+
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous" defer></script>
+    <script src="js.js" defer></script>
     <link href="StyleSheet1.css" rel="stylesheet" />
-    <title></title>
+    <title> Havadan Sudan </title>
 </head>
 <body>
-   <article>
-       <header>
-           <div class="logo">
-               <img src="https://www.afacan.com.tr/wp-content/uploads/339-3395145_ico-png-icns-click-here.jpg" alt="logo" width="100" height="100" />
-           </div>
 
-           <div class="name">
-               <p>Click Test</p>
-           </div>
-           
-       </header>
 
-       <section>
-           <div class="konteyner">
 
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="bölüm"> <p>"Animasyon"</p> </div>
-               <div class="açıklama">  <p> Bu kısımda sitenin kullanımına dair basit yönergeler buluncaktır.</p> </div>
-           </div>
-               
-           
+    <header>
 
-           <div class="konteynet">
-               <div class="buton"> <p> "buton"</p></div>
-           </div>
-       </section>
+        <!--Üst navbar-->
+        <div class="ust_menu">
+            <div class="container">
+                <div class="col-12 text-right">
+                    <a href="#hakkinda" target="_self">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="hakkinda" target="_self">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
 
-       <footer>
-           <a href="https://marmara.edu.tr" target="_blank">Marmara Üniversitesi © 2021</a>
-       </footer>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-   </article>
+        <!--logo-->
+        <div class="logo">
+            <img id="log" src="logo.png" alt="logo" width="100" height="100" />
+        </div>
+
+        <!--Header menüsü-->
+        <ul>
+            <li><a class="active" href="#">Anasayfa</a></li>
+            <li><a href="https://weather.com/tr-TR/kisisel/bugun/l/TUXX0002:1:TU?Goto=Redirected" target="_blank">Hava Durumu</a></li>
+            <li><a href="#hakkinda">İletişim</a></li>
+            <li><a href="#hakkinda">Hakkında</a></li>
+        </ul>
+
+    </header>
+
+    <section>
+
+        <!-- Yukarı gitme butonu-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Yukarı</button>
+
+        <!--Hava olaylarını başlıklar halinde tutan ızgara yapısı-->
+
+        <div id="container" class="container bg-dark border">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12  my-3"> <!--yağmur-->
+                    <a href="#ymr">
+                        <div id="yagmur" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Yağmur </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12  my-3"> <!--kar-->
+                    <a href="#kr">
+                        <div id="kar" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold">Kar</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12  my-3"> <!--dolu-->
+                    <a href="#dl">
+                        <div id="dolu" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Dolu </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center"> 
+                <div class="col-lg-4 col-md-6 col-sm-12 my-3"> <!--çiy-->
+                    <a href="#cy">
+                        <div id="ciy" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Çiy </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12  my-3"> <!--kırağı-->
+                    <a href="#krg">
+                        <div id="kiragi" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Kırağı </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12  my-3"> <!--şimşek-->
+                    <a href="#smsk">
+                        <div id="simsek" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Şimşek </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12  my-3"> <!--bulut-->
+                    <a href="#blt">
+                        <div id="bulut" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Bulut </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12  my-3"> <!--rüzgar-->
+                    <a href="#rzgr">
+                        <div id="ruzgar" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Rüzgar </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-3">  <!--gökkuşağı-->
+                    <a href="#ksk">
+                        <div id="kusak" class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <p class="card-text text-uppercase font-weight-bold"> Gökkuşağı </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Hava olayları anlatımı-->
+        <div class="container mt-20">
+            <div id="ymr" class="row">
+                <div class="col-12">
+                    <h1> Yağmur</h1>
+                    <blockquote>
+                        Yağmur, bulutlardan su şeklinde yağan yağış biçimidir. Yağmur taneleri düşme esnasında kuru havadan geçerken bir kısmının veya tamamının buharlaşması sonucu bulut tabandan aşağı doğru sünüyormuş gibi görünür buna virga denilir. Bilim adamlarının yağmurun oluşumu ve yağışı ile ilgili açıklamaları Bergeron Süreci olarak adlandırılır. Ayrıca yazın bazı günlerde bulut olduğu halde yağmur yağmamasının sebebi hava kütlesinin taşıdığı toplam su miktarının az olması sebebiyle yeterince yağış yapacak kadar yoğunlaşmamasıdır. Yapay yağmurlar ise havanın bulutlu olduğu günlerde bulutlara gümüş iyodür bulutu sıkılarak yağdırılır. Havada bulut olmazsa asla yapay yağmur yağdırılamaz.
+                    </blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/FO1RfNfdSao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <hr />
+                </div>
+            </div>
+            <div id="kr" class="row">
+                <div class="col-12">
+                    <h1> Kar</h1>
+                    <blockquote>
+                        Kar, beyaz, parlak, çoğunlukla altıgen şekilli, buz kristallerinden oluşan bir yağış çeşididir. Buz kristalleri 0 °C altında su buharının Yoğunlaşması ile oluşur[1].
+
+                        Çok sayıda kar kristal çeşidi olmasına rağmen hepsi altı köşelidir. Kar tanelerinin kristal yapıları birbirinin tıpa tıp aynısı değildir. Mikroskopla büyütülen kar taneleri üzerinde yapılan araştırmalarda, kristal yapıları birbirinin aynı olan iki kar tanesine rastlanmamıştır. Kar kristalleri üzerinde ilk araştırmaları yapan Amerikalı Wilson Bentley, gördüğü muhteşem sanat karşısında adeta büyülenmiş ve elli yıl boyunca sürekli kar kristali fotoğrafı çekmiştir. Elde ettiği 6000 resim içinde kristal yapıları birbirinin aynı olan iki kar tanesine rastlayamamıştır. Daha sonraları diğer bilim adamlarının sürdürdüğü çalışmalar neticesinde şimdiye kadar kar tanecikleri arasında aynı büyüklükte, aynı şekilde ve aynı sayıda su molekülü ihtiva eden iki kristal bile bulunamamıştır.
+                    </blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/_I6muqKKCps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+            <div id="dl" class="row">
+                <div class="col-12">
+                    <h1> Dolu</h1>
+                    <blockquote>
+                        Dolu, bir yağış türü. Kule tipi bulutlardaki düşey hava sirkülasyonuna kapılan bulut damlacıklarının bulut içindeki 0 ile -40 derece santigrat seviyelerini geçerken (donma ve erimeler ile) tabaka tabaka büyümesi ile oluşur.
+
+                        Bulut içinde düşey hava sirkülasyonunu ve yerçekimini yenerek yere düşen dolu taneleri bulut ile yer arasındaki hava sıcaklığından çok fazla etkilenmez. Ama bulut tabanından ayrılan kar kristalleri içinden geçtiği hava tabakasının sıcaklığına göre, kuşbaşı kara, granül şeklindeki kara, sulusepkene, yağmura veya donan yağmura dönüşebilir.
+
+                        Yağmur damlaları fırtına nedeniyle donar. Yere doğru inerken hava akımları bunları bir aşağı bir yukarı sürükleyerek daha büyük buz parçaları hâline getirir. Ağırlaşan buz parçaları yere düşer. Buna dolu denir
+                    </blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/ckbR6VF-Njg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+
+            <div id="cy" class="row">
+                <div class="col-12">
+                    <h1> Çiy</h1>
+                    <blockquote>Çiy, havadaki su buharının soğuk bir yüzey üzerinde sıvı hale geçmesi sonucu oluşan su damlacıkları. Atmosferik sınır tabakadaki hava parselinin aktüel buhar basıncının, yüzeyin sıcaklığına ait doymuş buhar basıncından daha yüksek olması sonucu, havadaki su buharının soğuk bir yüzey üzerinde yoğunlaşarak sıvı faza geçmesidir. Bahar aylarında bulutsuz gecelerde gerçekleşen radyasyon kaybı, yeryüzeyine temas eden ince bir hava tabakasında fazlaca soğumaya neden olur ve çiy de genellikle bu durumda -nem, sıcaklık ve basınç koşulları da uygunsa- gerçekleşir. Yer/cisim sıcaklığı donma seviyesinin altında ise, çiy yerine kırağı gerçekleşir. Çiy, meteoroloji biliminde yağış kategorisine girmez. Hatta klimatolojik rasat cetvellerinde meteorolojik hadise değil, müşahede olarak rapor edilir.</blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/tWocVy6GmwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+
+            <div id="krg" class="row">
+                <div class="col-12">
+                    <h1> Kırağı</h1>
+                    <blockquote>Kırağı, atmosferik sinir tabakadaki hava partiküllerinin efektif buhar basıncının, yüzeyin sıcaklığına ait buz üstünde donmuş buhar basıncından daha alçak olması sonucu, havadaki su buharının soğuk yüzey ve/veya cisim üzerinde yoğuşarak katı feyze geçmesidir. Kısaca kırağı zeminler üzerindeki yoğunlaşmanın buz kristalleri şeklinde olmasıdır. Kırağının oluşabilmesi için de havanın açık ve durgun olması gerekir. Oluşum biçimi bakımından çiyden bir farkı yoktur. Meteorolojide yağış kategorisinde değerlendirilmez. Soğumanın çok şiddetli olduğu yerlerde, havanın temas ettiği yüzeylerde buz kristalleri şeklinde oluşan yoğuşma ürünüdür. Türkiye'de bu olay kış mevsiminin başlarında görülür.[1]</blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/qCaamom_2NY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+
+            <div id="smsk" class="row">
+                <div class="col-12">
+                    <h1> Şimşek ve Yıldırım</h1>
+                    <blockquote>
+                        Şimşek elektrik yüklü bir bulut ile diğer bir bulut arasındaki elektrik boşalmasıdır. Önceden tahmin edilmesi oldukça zordur. Fakat belli hava koşullarında meydana gelir.
+
+                        Yıldırım ise; bulut ile yeryüzü arasındaki elektrik boşalmaları olarak tanımlanır. Yıldırım, zikzaklı bir yol takip ederek kollar hâlinde aşağı doğru iner. Genellikle şiddetli bir yağmurla birlikte görülür. Yıldırım, gök gürültüsü ve şimşekten oluşan, gökyüzü ile yeryüzü arasındaki elektrik boşalmasıdır.[3][4]
+
+                        Şimşek, bir bulut kümesi aşırı miktarda + veya - elektrik yükü ile yüklendiğinde meydana gelen, gözle görülür elektrik boşalmasıdır. Elektrik yükünün hava direncini kıracak kadar çok olması gerekir. Şimşek ve yıldırım sadece kümülonimbüs bulutlarında görülür. Diğer bulutlarda sadece enerji akımı sayesinde görülebilir. Kar fırtınalarında, kum fırtınalarında ve hatta volkanlardan çıkan gaz ve toz bulutlarında da şimşeklere rastlanır. Bir oraj esnasında şimşekler; bulutlar arasında, bulutla hava arasında ve bulutla yer arasında gerçekleşebilir. Dünya genelinde saniyede 50 ila 100 şimşek çakar.
+                    </blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/JOa7LRcBkUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+
+            <div id="blt" class="row">
+                <div class="col-12">
+                    <h1> Bulut</h1>
+                    <blockquote>
+                        Bulut, serbest bir hava kütlesinde toplanmış, gözle görülebilir su damlacıkları, buz kristalleri veya her ikisinin karışımından oluşan yapı. Bulutlar yer seviyesinden yüksekte bulunur. Yer seviyesinde oluşan sığ bulut katmanları ise sis olarak adlandırılır.
+
+                        Atmosferde yoğunlaşan su buharı küçük su damlacıklarını ve genellikle 0,01 mm çapındaki buz kristallerini meydana getirir. Milyarlarca damlacık ve kristal bir arada bulut denilen yapıyı oluşturur. Bulutlar tüm görünür dalga boyutlarını yansıtır. Genellikle beyazdır ancak gri veya siyah olarak da görünebilirler. Gri ya da siyah görünmelerinin sebebi, kalınlıkları nedeniyle güneş ışığının geçmesine izin vermemeleridir.
+                    </blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/KmS8vNIZSwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+            <div id="rzgr" class="row">
+                <div class="col-12">
+                    <h1>Rüzgar</h1>
+                    <blockquote>
+                        Rüzgâr, atmosferdeki havanın Dünya yüzeyine yakın, doğal, çoğunlukla yatay hareketleridir.
+                        Hava hareketlerinin temel sürücüsü, atmosfer basıncının bölgeler arasında farklı değerlerde bulunmasıdır. Rüzgâr, alçak basınçla yüksek basınç bölgesi arasında yer değiştiren hava akımıdır, daima yüksek basınç alanından alçak basınç alanına doğru hareket eder. İki bölge arasındaki basınç farkı ne kadar büyük olursa, hava akım hızı o kadar fazla olur. Rüzgâr sahip olduğu hıza göre esinti, fırtına gibi isimler alır.
+                    </blockquote>
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/BDWSdBxqTXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+            <div id="ksk" class="row">
+                <div class="col-12">
+                    <h1>Gökkuşağı</h1>
+                    <blockquote>
+                        Gökkuşağı, güneş ışınlarının yağmur damlalarında veya sis bulutlarında yansıması ve kırılmasıyla meydana gelen ve ışık tayfı renklerinin bir yay şeklinde göründüğü meteorolojik bir olaydır. Gökkuşağında görülen yedi renk; kırmızı, turuncu, sarı, yeşil, mavi çivit mavisi, menekşedir.
+                    </blockquote>
+
+                    <iframe width="520" height="310" src="https://www.youtube.com/embed/C1iMSFRccEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div id="hakkinda" class="col-lg-6 col-md-12">
+                    <h2>Hakkında</h2>
+                    <p style="color:white">Havadan Sudan hava olayları hakkında bilgi veren bir sitedir. Web programlama dersi projesidir.</p>
+                </div>
+                <div id="iletisim" class="col-lg-6 col-md-12">
+                    <h2>İletişim</h2>
+                    <p style="color:white">drehctra@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>
