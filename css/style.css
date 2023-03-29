@@ -46,7 +46,7 @@ header h1{
   
 }
 
-section{
+#home{
     margin: 30px 50px 20px 50px;
     display: flex;
     background-color: rgba(182,214,237,255);
@@ -55,12 +55,24 @@ section{
     border-radius: 20px;
 }
 
-section p{
+#home #paragraf1{
+
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    flex-grow: 2;
+    
+}
+
+#home #paragraf2{
 
     border: 3px solid black;
     padding: 5px;
     border-radius: 20px;
     
+}
+.members{
+    display:flex;
 }
 
 footer{
@@ -68,6 +80,7 @@ footer{
     height: 350px;
     
 }
+
 
 .divbir{
     background-color: rgb(56, 56, 56);
