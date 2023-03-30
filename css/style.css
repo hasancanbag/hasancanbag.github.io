@@ -119,5 +119,16 @@ footer{
     border-radius: 10px;
 }
 
+#button{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom:1cm;
+    left: 95%;
+}
+#button1{
+    position: absolute;
+    margin-left: 50%;
+}
+
 
 
