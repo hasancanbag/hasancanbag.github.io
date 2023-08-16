@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
                     case 'about':
                         output =
-                            "Hello, I'm Justin Maximillian Kimlim from Indonesia, a 15 y.o. high school student with hobbies of computer science, programming and science fiction. I enjoy making projects or even website clone.";
+                            "Hello, I'm Hasan Can, a computer engineering student with hobbies of computer science, programming and science fiction. I enjoy making projects or even website clone.";
                         break;
                     case 'links':
                         output = `<ul>
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     case 'https://kimlimjustin.com':
                     case 'kimlimjustin.com':
                     case 'http://kimlimjustin.com':
-                        output = `This website is designed and built by Justin Maximillian Kimlim using HTML, CSS and Vanilla JavaScript and was inspired by several websites over the internet. Find out the repo of this website <a href = "https://github.com/kimlimjustin/kimlimjustin.com" target="_blank" rel="noopener">here.</a>`;
+                        output = `This website is designed and built by Hasan Can Bağ using HTML, CSS and Vanilla JavaScript and was inspired by several websites over the internet. Find out the repo of this website <a href = "https://github.com/kimlimjustin/kimlimjustin.com" target="_blank" rel="noopener">here.</a>`;
                         break;
                     case 'hello':
                     case 'hi':
