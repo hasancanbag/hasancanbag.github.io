@@ -27,9 +27,9 @@
             "en-US": "About"
             
         },
-        "I am a computer engineering student with a keen interest in technology and innovation. I have a positive and cheerful personality, and I strongly value teamwork. I also have a passion for improvisational theater, which enhances my creativity, quick thinking, and self-confidence.":{
-            "tr-TR": "Merhaba, ben Hasan Can Bağ. Bilişim teknolojileri meraklısı, programlamayı ve bilim kurguyu seven bir bilgisayar mühendisliği öğrencisiyim",
-            "en-US": "I am a computer engineering student with a keen interest in technology and innovation. I have a positive and cheerful personality, and I strongly value teamwork. I also have a passion for improvisational theater, which enhances my creativity, quick thinking, and self-confidence."
+        "I was born in 1998. I'm a Computer Engineering student at Marmara University. Technology has always captivated me, driving my curiosity to explore its endless possibilities. With a knack for teamwork, I thrive in collaborative environments, valuing diverse insights that lead to innovative solutions. Constantly hungry for knowledge, I approach every challenge as a chance to learn and grow. Problem-solving comes naturally to me, thanks to my analytical mindset. I'm excited to contribute my passion for technology and problem-solving skills to new ventures.":{
+            "tr-TR": "1998 doğumluyum, şu an Marmara Üniversitesi'nde Bilgisayar Mühendisliği öğrencisiyim. Teknoloji her zaman ilgimi çekmiştir ve sürekli gelişen dijital dünyayı keşfetme isteğiyle doluyum. Takım çalışmasında başarılıyım, farklı perspektiflerin yenilikçi çözümlere yol açtığı işbirliği ortamlarında gelişirim. Sürekli öğrenmeyi isteyen biriyim. Her zorluğu öğrenmek ve büyümek için bir fırsat olarak görüyorum. Analitik bakış açım sayesinde problem çözme konusunda yetenekliyim. Teknolojiye olan tutkumu ve problem çözme becerilerimi yeni projelere katkıda bulunmak için kullanmayı dört gözle bekliyorum.",
+            "en-US": "I was born in 1998. I'm a Computer Engineering student at Marmara University. Technology has always captivated me, driving my curiosity to explore its endless possibilities. With a knack for teamwork, I thrive in collaborative environments, valuing diverse insights that lead to innovative solutions."
             
         },
         "Recent Articles": {
@@ -79,6 +79,11 @@
         "Switch Theme": {
             "tr-TR": "Temayı Değiştir",
             "en-US": "Switch Theme"
+        },
+        "Terminal Version": {
+            "tr-TR": "Terminal Modu",
+            "en-US": "Terminal Version"
         }
+        
     }
 }
