@@ -37,6 +37,14 @@
             "en-US": "Recent Articles"
             
         },
+        "English CV":{
+            "tr-TR": "İngilizce CV",
+            "en-EN": "English CV"
+        },
+        "Turkish CV":{
+            "tr-TR": "Türkçe CV",
+            "en-EN": "İngilizce CV"
+        },
         "Articles": {
             "tr-TR": "Yayınlar",
             "en-US": "Articles"
@@ -60,9 +68,9 @@
             "tr-TR": "İletişim",
             "en-US": "Contact"
         },
-        "Any questions or just want to say hi? My inbox is always open, and I'll try my best to get back to you": {
-            "tr-TR": "Benimle iletişime geçmek isterseniz gelen kutum her zaman açık. Size en kısa süredece döneceğim",
-            "en-US": "Any questions or just want to say hi? My inbox is always open, and I'll try my best to get back to you"
+        "Any questions or just want to say hi? My inbox is always open, and I'll try my best to get back to you! You can use the buttons below to reach my CV.": {
+            "tr-TR": "Benimle iletişime geçmek isterseniz gelen kutum her zaman açık. Size en kısa süredece döneceğim. CV'me ulaşmak için aşağıdaki butonları kullanabilirsiniz.",
+            "en-US": "Any questions or just want to say hi? My inbox is always open, and I'll try my best to get back to you! You can use the buttons below to reach my CV."
         },
         "Say Hello": {
             "tr-TR": "Merhaba Deyin",

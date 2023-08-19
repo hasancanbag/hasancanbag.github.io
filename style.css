@@ -139,6 +139,8 @@ body[data-theme="light"] .loading-animation{
 .contacts{
     min-height: calc(40vh - 16rem);
     padding: 8rem 0;
+    
+    
 }
 
 .intro-title, .about-me-title{
@@ -417,6 +419,12 @@ body[data-theme="light"] .article-content-inner{
     background: -webkit-linear-gradient(-70deg,#804eda,#71c2a3);
 }
 
+.contacts-cv-btn{
+    text-align: center;
+    color: var(--contrast-color);
+    background-color: var(--navy);
+}
+
 .contacts-content{
     background-color: var(--navy);
     padding: 1.2rem;
@@ -429,6 +437,10 @@ body[data-theme="light"] .article-content-inner{
     margin-right: auto;
     display: grid;
     grid-template-columns: auto auto;
+}
+body[data-theme="light"] .contacts-cv-btn{
+    background-color: var(--whitef);
+    color: var(--white);
 }
 body[data-theme="light"] .contacts-content{
     background-color: var(--sky);
@@ -452,6 +464,28 @@ body[data-theme="light"] .contacts-content{
     height: fit-content;
     height: -moz-fit-content;
 }
+
+.cv-button{
+    text-decoration: none;
+    opacity: .8;
+    background-image: linear-gradient(#5c69ad, #77549e);
+    font-size: 1.25rem;
+    border: 1px solid var(--sky);
+    border-radius: 15px;
+    color: var(--dark-navy);
+    margin-top: 15px;
+    padding: 15px 32px;
+    text-align: center;
+    transition: .5s;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    width: 40%;
+}
+
+body[data-theme="light"] .cv-button{
+    color: var(--white);
+}
+
 
 body[data-theme="light"] .contacts-link-btn{
     color: var(--white);
